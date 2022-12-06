@@ -1,0 +1,56 @@
+<div id="header">
+      
+      <a> <h1>Dark  Market</h1> </a>
+    <nav class="navbar">
+        <a routerLink="/Home">Home</a>
+        <a routerLink="/list-abonnements">Services</a>
+    <a routerLink="/propos"  class="nav-item">About Us</a>
+    
+     </nav>  
+     <form [formGroup]="form" class="search-box-container" *ngIf="display" novalidate>
+        <input type="search" id="search-bar" placeholder="search here...." value=" " formControlName="search" >
+        <label for="search-box" class="fas fa-search" ></label>
+    
+    
+    </form> 
+    <div class="search-form" >
+      <input type="search" id="search-box" placeholder="search here...">
+      
+      <label for="search-box" class="fas fa-search" (click)="fn()"></label>
+  </div>
+    </div>
+    
+    <div class="icons">
+       
+         <i class="fas fa-search" id ="search-btn" #i1  ></i>  
+         
+      
+      <i class="fas fa-user" id="login-btn"></i>  
+    </div> 
+    
+    <!-- </nav>  
+    <form [formGroup]="form" class="search-bar-container" *ngIf="display" novalidate>
+        <input type="search" id="search-bar" placeholder="entrez le nom ou le lieu de l'hôtel" value="abcd" formControlName="search" >
+        <label for="search-bar" class="fas fa-search" (click)="fn()"></label>
+    
+    
+    </form> 
+    <div class="icons">
+       
+         <i class="fas fa-search" id ="search-btn" #i1  ></i>  
+         
+      
+      <i class="fas fa-user" id="login-btn"></i>  
+    </div>
+    
+        <button   class="btn text-white">
+           {{login.user_connecte}} aaa </button>
+           <button   class="btn text-white">  logout  
+        </button> -->
+          
+    
+    
+    
+    
+    
+    

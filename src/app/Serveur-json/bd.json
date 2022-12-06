@@ -1,0 +1,68 @@
+{
+  "abonnements": [
+    {
+      "id": 1,
+      "libelle": "Netflix",
+      "img": "/assets/i1.png",
+      "prix": 30,
+      "disponible": true,
+      "duree": "1 month"
+    },
+    {
+      "id": 2,
+      "libelle": "spotify",
+      "img": "/assets/i4.png",
+      "prix": 25,
+      "disponible": true,
+      "duree": "1 month"
+    },
+    {
+      "id": 3,
+      "libelle": " Microsoft office 365",
+      "img": "/assets/i13.png",
+      "prix": 70,
+      "disponible": true,
+      "duree": "1 year"
+    },
+    {
+      "id": 4,
+      "libelle": "Bein Sport",
+      "img": "/assets/i6.png",
+      "prix": 250,
+      "disponible": true,
+      "duree": "6 months"
+    },
+    {
+      "id": 5,
+      "libelle": "E-shop",
+      "img": "/assets/i12.jpg",
+      "prix": 120,
+      "disponible": false,
+      "duree": "3 months"
+    },
+    {
+      "id": 6,
+      "libelle": "Amazon",
+      "img": "/assets/amazon.jpg",
+      "prix": 150,
+      "duree": "3 months",
+      "disponible": true
+    },
+    {
+      "id": 7,
+      "libelle": "Ali Express",
+      "img": "/assets/i8.png",
+      "prix": 170,
+      "disponible": true,
+      "duree": "3 months"
+    },
+    {
+      "id": 8,
+      "libelle": "Walmart",
+      "prix": 50,
+      "img": "/assets/walmart.png",
+      "disponible": true,
+      "duree": "1 month"
+    }
+  ]
+}

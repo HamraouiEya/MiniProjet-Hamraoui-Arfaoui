@@ -1,0 +1,6 @@
+form {
+    background-color: aliceblue;
+    color: #020282;
+    width: 50%;
+    box-shadow: 4.0px 8.0px 8.0px hsl(220deg 60% 50%);
+}

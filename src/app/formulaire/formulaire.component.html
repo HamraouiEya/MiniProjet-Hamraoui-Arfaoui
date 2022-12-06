@@ -1,0 +1,57 @@
+<br>
+<br>
+<div class="container mt-5">
+    <div class="row justify-content-md-center">
+    <h2 style="color:#900836 ;text-align:center;text-shadow: 0.1em 0.1em 0.15em #020282;margin-bottom: 12px;">Get your account</h2>
+    <br>
+    <form [formGroup]="productForm"  (ngSubmit)="onSubmit(); productForm.reset()" >
+        
+      <br>
+          Username: <input type="text" formControlName="username" value="username" required style="margin-bottom:9px ;"><br>
+          <div *ngIf="isValidrequireduser()" class="alert alert-danger">
+            This field is required!
+           </div>
+         Email: <input type="email" id="e" formControlName="email" value="Email" required  style="margin-bottom:9px ;" ><br>
+         <div *ngIf="isValidrequiredmail()" class="alert alert-danger">
+          This field is required!
+         </div>
+         
+         Adress: <input type="text" formControlName="ad" value="Adress"  style="margin-bottom:9px ;" ><br>
+         <div *ngIf="isValidrequiredad()" class="alert alert-danger">
+          This field is required!
+         </div>
+         Gender: <br> <input type="radio"  id="r1" formControlName="female" value="Female" >Female
+          <input type="radio"  id="r2" value="Male" formControlName="male">Male 
+          <br>
+        Mode paiement:  <select formControlName="select">
+          <option> Compte Bancaire</option>
+          <option>Compte Postale</option>
+          <option> D17</option>
+        </select>
+        <div *ngIf="isValidrequiredselect()" class="alert alert-danger">
+          This field is required!
+         </div>
+        <input id="select" type="text" maxlength="8" formControlName="code" value="Enter the code please" style="margin-left:8px;">
+        <div *ngIf="isValidrequiredcode()" class="alert alert-danger">
+          This field is required!
+         </div>
+         <div *ngIf="isValidPattern()" class="alert alert-info">
+          Only numbers!
+         </div>
+        
+          <br>
+         Password: <input type="text" id="p" formControlName="pass" value="Password" required  style="margin-top:9px ;">
+         <div *ngIf="isValidrequiredpass()" class="alert alert-danger">
+          This field is required!
+         </div>
+         <div *ngIf="isValidrequiredminLength()" class="alert alert-success">
+          It's too short!
+         </div>
+        <br>
+      <input type="submit"  class="btn btn-success" style="background-color:#900836; margin-right:8px;margin-top:9px;" value="Send">
+    <input type="reset" class="btn btn-success" style="background-color:#900836;margin-top:9px;" value="Reset">
+    <br>
+    <br>
+</form>
+    </div></div>
+    <app-footer></app-footer>

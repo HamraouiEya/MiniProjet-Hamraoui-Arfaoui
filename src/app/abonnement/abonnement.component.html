@@ -1,0 +1,10 @@
+
+<div  class="card border-primary mb-3" class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="abonnement.img"  alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{abonnement.libelle}}</h5>
+      <p class="card-text">Price:{{abonnement.prix}}DT</p>
+      <button style="background-color: #020282;color: aliceblue;" [routerLink]="['/abonnement',abonnement.id]">View</button>
+    </div>
+  </div>
+   

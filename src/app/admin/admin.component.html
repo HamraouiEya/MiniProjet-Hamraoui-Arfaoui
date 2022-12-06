@@ -1,0 +1,59 @@
+<ul class="row justify-content-center align-items-center" style="list-style: none;">
+  <li *ngFor="let a of abonnement" class="col-sm">
+  <app-abonnement [abonnement]="a">     
+  </app-abonnement>
+  <button class="btn btn-success" type="submit" (click)="updateproduit(a.id)" >Update </button>
+
+  <button class="btn btn-success" type="submit" (click)="supprimer(a.id)">Delete</button>
+  </li>
+
+</ul>
+<div class="container">
+<div>
+<h2>Add abonnement   </h2>  
+</div>
+
+<form [formGroup]="form"   novalidate >
+ 
+  <div class="col-sm-4 col-md-2 col-lg">
+      <label for="id"> id Abonnement</label>
+      <input type="text" id="id" formControlName="id">
+  </div>
+  <div class="col-sm-4 col-md-2 col-lg">
+      <label for="lib"> Libelle Abonnement</label>
+      <input type="text" id="lib" formControlName="libelle">
+  </div>
+  
+  <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="prix"> Price Abonnement</label>
+      <input type="text" id="prix" formControlName="prix" >
+  </div>
+  <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="Date">  Duration</label>
+      <input type="text" id="Date" formControlName="DataPeremeption" >
+  </div>
+  <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="place">Available</label>
+      <input type="radio" id="solde" formControlName="Soldee" > true
+      <input type="radio" id="solde" formControlName="Soldee" >false
+  </div>
+  
+  <h5>Update photo</h5>
+  <div class="col-sm-2 col-md-2 col-lg-2" formArrayName="photo">
+
+      <div *ngFor="let p of lesimages.controls; let i=index">
+          Choix {{i+1}} <input type="text" [formControlName]="i"/>
+          </div>
+  </div>
+   <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="photo"> Photo</label>
+      <input type="text" id="photo" formControlName="photo" >
+  </div> 
+  
+  <br>
+  <button class="btn btn-success" type="submit" (click)="onAjouter()" >Add</button>
+</form>
+</div>
+
+
+

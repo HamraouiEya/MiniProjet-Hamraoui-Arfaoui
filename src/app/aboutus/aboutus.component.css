@@ -1,0 +1,14 @@
+.div {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: large;
+  }
+  .img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }

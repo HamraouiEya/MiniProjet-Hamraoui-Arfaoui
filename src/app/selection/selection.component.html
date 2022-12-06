@@ -1,0 +1,18 @@
+<div class="card">
+<div class="card-header">{{id}}
+</div>
+<div class="card-body" >
+    <img class="card-img-top" src="abonnements.img" ><br>
+    {{abonnements.libelle |uppercase}}<br>
+    Price:{{abonnements.prix | currency :' ':'symbol' : '2.3-3'}}DT<br>
+    Duration:{{abonnements.duree}}<br>
+  <div *ngIf="abonnements.disponible==true">Available✅</div>
+</div>
+<div class="card-footer">
+    <button class="btn btn-dark" routerLink="/list-abonnements">Back</button>
+    <button class="btn btn-info" routerLink="/Formulaire">Get your Account</button>
+</div>
+</div>
+<br><br>
+<input type="text" >
+<input type="button" value="Add a comment" id="com" class="btn btn-link" >
